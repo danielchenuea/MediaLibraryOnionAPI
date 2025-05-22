@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MediaLibrary.API</name>
+    </assembly>
+    <members>
+        <member name="T:MediaLibrary.API.Controllers.AccountController">
+            <summary>
+            Account/Users/Login Controller
+            </summary>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.AccountController.ConfirmEmail(MediaLibrary.Application.Features.AccountFeatures.Commands.ConfirmEmailAccountCommand)">
+            <summary>
+            Confirm the Email of the Account
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.AccountController.Create(MediaLibrary.Application.Features.AccountFeatures.Commands.RegisterAccountCommand)">
+            <summary>
+            Register new Account/User
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.AccountController.Login(MediaLibrary.Application.Features.AccountFeatures.Commands.LoginAccountCommand)">
+            <summary>
+            Login Account and return Token
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.AccountController.ForgotPassword(MediaLibrary.Application.Features.AccountFeatures.Commands.ForgotPasswordAccountCommand)">
+            <summary>
+            Forgot Password API
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.AccountController.ResetPassword(MediaLibrary.Application.Features.AccountFeatures.Commands.ResetPasswordAccountCommand)">
+            <summary>
+            Reset Password Method
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.AccountController.ChangePassword(MediaLibrary.Application.Features.AccountFeatures.Commands.ChangePasswordAccountCommand)">
+            <summary>
+            Change Password Method
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.AccountController.ResendVerification(MediaLibrary.Application.Features.AccountFeatures.Commands.ResendVerificationAccountCommand)">
+            <summary>
+            Resend Verification URL
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.AccountController.RefreshToken(MediaLibrary.Application.Features.AccountFeatures.Commands.RefreshTokenAccountCommand)">
+            <summary>
+            Refresh User token and get a new one
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.AccountController.RevokeToken(MediaLibrary.Application.Features.AccountFeatures.Commands.RevokeTokenAccountCommand)">
+            <summary>
+            Revoke refresh token of the account
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.AccountController.RevokeAllTokens(MediaLibrary.Application.Features.AccountFeatures.Commands.RevokeAllAccountCommand)">
+            <summary>
+            Revoke Refresh Tokens of all accounts
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MediaLibrary.API.Controllers.BooksApiController">
+            <summary>
+            Api Controlling the books
+            </summary>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.BooksApiController.GetAll">
+            <summary>
+            Retrieves a list of books
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.BooksApiController.GetById(System.Guid)">
+            <summary>
+            Retrieves a specific book
+            </summary>
+            <param name="id">Id of the book</param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.BooksApiController.Group">
+            <summary>
+            Retrieves a list of books without a group
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.BooksApiController.Create(MediaLibrary.Application.Features.BookFeatures.Commands.CreateBookCommand)">
+            <summary>
+            Creates a new book
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.BooksApiController.Clone(System.Guid)">
+            <summary>
+            Clones a book
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.BooksApiController.Update(System.Guid,MediaLibrary.Application.Features.BookFeatures.Commands.UpdateBookCommand)">
+            <summary>
+            Updates a book
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.BooksApiController.ReadingBook(System.Guid)">
+            <summary>
+            Tag a book as reading
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.BooksApiController.UnreadingBook(System.Guid)">
+            <summary>
+            Untag a book as reading
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.BooksApiController.FavoriteBook(System.Guid)">
+            <summary>
+            Tag a book as Favorite
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.BooksApiController.UnfavoriteBook(System.Guid)">
+            <summary>
+            Untag a book as Favorite
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.BooksApiController.Delete(System.Guid)">
+            <summary>
+            Deletes a book
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MediaLibrary.API.Controllers.GroupsApiController">
+            <summary>
+            Api Controlling the groups
+            </summary>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.GroupsApiController.GetAll">
+            <summary>
+            Retrieves a list of groups
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.GroupsApiController.GetById(System.Guid)">
+            <summary>
+            Retrieves a specific group
+            </summary>
+            <param name="id">Id of the group</param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.GroupsApiController.Create(MediaLibrary.Application.Features.GroupFeatures.Commands.CreateGroupCommand)">
+            <summary>
+            Creates a new group
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.GroupsApiController.Update(System.Guid,MediaLibrary.Application.Features.GroupFeatures.Commands.UpdateGroupCommand)">
+            <summary>
+            Updates a group
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.GroupsApiController.Delete(System.Guid)">
+            <summary>
+            Deletes a group
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MediaLibrary.API.Controllers.VideoGamesApiController">
+            <summary>
+            Api Controlling the videogames
+            </summary>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.VideoGamesApiController.GetAll">
+            <summary>
+            Retrieves a list of videogames
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.VideoGamesApiController.GetById(System.Guid)">
+            <summary>
+            Retrieves a specific videogame
+            </summary>
+            <param name="id">Id of the videogame</param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.VideoGamesApiController.Group">
+            <summary>
+            Retrieves a list of video games without a group
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.VideoGamesApiController.Create(MediaLibrary.Application.Features.VideoGameFeatures.Commands.CreateVideoGameCommand)">
+            <summary>
+            Creates a new videogame
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.VideoGamesApiController.Clone(System.Guid)">
+            <summary>
+            Clones a videogame
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.VideoGamesApiController.Update(System.Guid,MediaLibrary.Application.Features.VideoGameFeatures.Commands.UpdateVideoGameCommand)">
+            <summary>
+            Updates a videogame
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaLibrary.API.Controllers.VideoGamesApiController.Delete(System.Guid)">
+            <summary>
+            Deletes a videogame
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

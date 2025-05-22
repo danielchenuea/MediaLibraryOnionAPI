@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaLibrary.Application", "MediaLibrary.Application\MediaLibrary.Application.csproj", "{3189AE1D-DD31-4702-A741-5B37A5DAFFC4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8BEA964C-157F-42A4-9DC9-9480710D59CE} = {8BEA964C-157F-42A4-9DC9-9480710D59CE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaLibrary.API", "MediaLibrary.API\MediaLibrary.API.csproj", "{033206E5-02CC-4CB2-963F-CFE58153FA93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{9A6DAE07-DE42-4DEB-8A91-ABE20D302F74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{34429815-65D6-4F6D-91F3-1F98DE7817EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{2B032044-6401-434C-9C5F-037FCCABD70D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaLibrary.Domain", "MediaLibrary.Domain\MediaLibrary.Domain.csproj", "{8BEA964C-157F-42A4-9DC9-9480710D59CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaLibrary.Persistence", "MediaLibrary.Persistence\MediaLibrary.Persistence.csproj", "{BC84F772-DFD2-4D88-BECD-100149BE4227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaLibrary.Infrastructure", "MediaLibrary.Infrastructure\MediaLibrary.Infrastructure.csproj", "{5685E128-C170-4F24-B15D-95755C8F1996}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3189AE1D-DD31-4702-A741-5B37A5DAFFC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3189AE1D-DD31-4702-A741-5B37A5DAFFC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3189AE1D-DD31-4702-A741-5B37A5DAFFC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3189AE1D-DD31-4702-A741-5B37A5DAFFC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{033206E5-02CC-4CB2-963F-CFE58153FA93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{033206E5-02CC-4CB2-963F-CFE58153FA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{033206E5-02CC-4CB2-963F-CFE58153FA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{033206E5-02CC-4CB2-963F-CFE58153FA93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BEA964C-157F-42A4-9DC9-9480710D59CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BEA964C-157F-42A4-9DC9-9480710D59CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BEA964C-157F-42A4-9DC9-9480710D59CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BEA964C-157F-42A4-9DC9-9480710D59CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC84F772-DFD2-4D88-BECD-100149BE4227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC84F772-DFD2-4D88-BECD-100149BE4227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC84F772-DFD2-4D88-BECD-100149BE4227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC84F772-DFD2-4D88-BECD-100149BE4227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5685E128-C170-4F24-B15D-95755C8F1996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5685E128-C170-4F24-B15D-95755C8F1996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5685E128-C170-4F24-B15D-95755C8F1996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5685E128-C170-4F24-B15D-95755C8F1996}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3189AE1D-DD31-4702-A741-5B37A5DAFFC4} = {34429815-65D6-4F6D-91F3-1F98DE7817EA}
+		{033206E5-02CC-4CB2-963F-CFE58153FA93} = {9A6DAE07-DE42-4DEB-8A91-ABE20D302F74}
+		{8BEA964C-157F-42A4-9DC9-9480710D59CE} = {34429815-65D6-4F6D-91F3-1F98DE7817EA}
+		{BC84F772-DFD2-4D88-BECD-100149BE4227} = {2B032044-6401-434C-9C5F-037FCCABD70D}
+		{5685E128-C170-4F24-B15D-95755C8F1996} = {2B032044-6401-434C-9C5F-037FCCABD70D}
+	EndGlobalSection
+EndGlobal

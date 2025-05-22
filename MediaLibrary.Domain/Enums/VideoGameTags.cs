@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MediaLibrary.Domain.Enums;
+
+public enum VideoGameTags
+{
+    Survival,
+    Adventure,
+    FPS,
+    TPS
+}
